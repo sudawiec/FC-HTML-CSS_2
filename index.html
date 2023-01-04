@@ -60,7 +60,7 @@
           /></a>
         </div>
         <!-- hamburger button -->
-        <button class="nav-toggle">
+        <button class="nav-toggle" aria-label="toggle navigation">
           <span class="nav-toggle__hamburger"></span>
         </button>
         <!-- vertical navigation -->
@@ -80,14 +80,48 @@
             </li>
             <li class="vertical-nav__item">
               <a href="#" class="btn btn-arrow vertical-nav__link" role="button"
-                >Request Demo<img src="./images/btn-arrow.png" alt="arrow icon"
+                >Request Demo<img src="./images/btn-arrow.svg" alt="arrow icon"
               /></a>
             </li>
           </ul>
         </nav>
       </header>
       <!-- MAIN -->
-      <main class="main"></main>
+      <main class="main">
+        <!-- hero section -->
+        <section class="hero">
+          <!-- hero text-block -->
+          <div class="intro">
+            <h1 class="intro__title">Save your data<br />storage here.</h1>
+            <p class="intro__text">
+              Data Warehouse is a data storage area that has been tested for
+              security, so you can store your data here safely but not be afraid
+              of being stolen by others.
+            </p>
+            <a href="#" class="btn btn-intro" role="button">Learn more</a>
+          </div>
+        </section>
+        <!-- about us section -->
+        <section class="about-us">
+          <div class="about-us__desc">
+            <h2 class="about-us__title">
+              We are a high-level data storage bank
+            </h2>
+            <p class="about-us__text">
+              The place to store various data that you can access at any time
+              through the internet and where you can carry it. This very
+              flexible storage area has a high level of security. To enter into
+              your own data you must enter the password that you created when
+              you registered in this Data Warehouse.
+            </p>
+          </div>
+          <img
+            src="./images/desc-img.svg"
+            alt="about-us section image"
+            class="about-us__img"
+          />
+        </section>
+      </main>
       <!-- FOOTER -->
       <footer class="footer"></footer>
     </div>
