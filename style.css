@@ -315,7 +315,6 @@ p {
     align-items: center;
     margin-bottom: 50px;
     padding: 40px 14px;
-    position: relative;
     text-align: center;
 }
 
@@ -325,6 +324,10 @@ p {
 
 .about-us__title {
     margin-bottom: 40px;
+}
+
+.about-us__img {
+    width: 42.7%;
 }
 
 /* ||MEDIA QUERIES */
@@ -361,9 +364,10 @@ p {
     }
     /* about-us */
     .about-us {
+        gap: 5.55%;
         flex-direction: row-reverse;
+        padding: 2em 5.8125em 1.5em 0.6875em;
         text-align: left;
-        padding: 125px 92px 125px 11px;
     }
 }
 
