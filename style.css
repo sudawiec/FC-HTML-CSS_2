@@ -56,7 +56,7 @@ body {
 .container {
     width: 90%;
     max-width: 1248px;
-    margin: 50px auto;
+    margin: 50px auto 91px;
 }
 
 a {
@@ -123,6 +123,34 @@ p {
 
 .testimonials-card__text {
     font: 400 1.125rem/1.8 'Avenir', sans-serif;
+}
+
+.ft-main__info-title {
+    color: #212353;
+    font: 900 1.25rem/1.6 'Avenir', sans-serif;
+}
+
+.ft-main__adress {
+    color: #212353;
+    font: 500 1rem/1.8 'Avenir', sans-serif;
+    letter-spacing: 0.01em;
+}
+
+.ft-main__contact {
+    color: #212353;
+    font: 400 1rem/1.8 'Avenir', sans-serif;
+    letter-spacing: 0.01em;
+}
+
+.ft-main__title {
+    color: #212353;
+    font: 900 1rem/1.6 'Avenir', sans-serif;
+}
+
+.ft-bottom__left-text {
+    color: #212353;
+    font: 400 0.75rem/1.8 'Avenir', sans-serif;
+    letter-spacing: 0.01em;
 }
 
 /* ||BUTTONS */
@@ -562,6 +590,70 @@ p {
     align-items: center;
     gap: 30px;
 }
+/* main */
+.ft-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.ft-main__info-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 2em;
+}
+
+.ft-main__adress {
+    margin-bottom: 10px;
+}
+
+.ft-main__title {
+    margin-bottom: 30px;
+}
+
+.ft-main__list {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ft-main__social-list {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ft-main__social-item {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(33, 35, 83, 0.1);
+    border-radius: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ft-bottom__right {
+    width: 60px;
+    background-color: rgba(156, 105, 226, 0.2);
+    border-radius: 50px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ||MEDIA QUERIES */
 
@@ -683,10 +775,15 @@ p {
         padding-top: 100px;
     }
     .ft-top {
+        margin-bottom: 75px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ft-top {
         flex-direction: row;
         justify-content: space-between;
         gap: 0;
-        margin-bottom: 75px;
         text-align: left;
     }
 }
