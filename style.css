@@ -31,24 +31,24 @@ html {
 
 :root {
     /* colors */
-    --bg-color: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
-    --pink: #f063b8;
-    --purple: #9c69e2;
+    --background-color: linear-gradient(180deg, #f6fafd 0%, #FFFFFF 19.4%);
+    --accent-pink: #f063b8;
+    --accent-purple: #9c69e2;
     --text-color-dark: #212353;
     --text-color-light: #4b5d68;
     --white: #ffffff;
     /* fonts */
-    --body-ff: 'Avenir', sans-serif;
-    --heading-ff: 'Helvetica', sans-serif;
-    --primary-font: 400 1rem/1.6 var(--body-ff);
-    --secondary-font: 700 2.5rem/1.3 var(--heading-ff);
-    --btn-font: 800 1rem/1.6 var(--body-ff);
+    --body-font-family: 'Avenir', sans-serif;
+    --heading-font-family: 'Helvetica', sans-serif;
+    --primary-font: 400 1rem/1.6 var(--body-font-family);
+    --secondary-font: 700 2.5rem/1.3 var(--heading-font-family);
+    --btn-font: 800 1rem/1.6 var(--body-font-family);
 }
 
 /* ||GENERAL */
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--background-color);
     color: #4b5d68;
     font: 400 1rem/1.6 'Avenir', sans-serif;
 }
@@ -562,9 +562,10 @@ p {
 }
 
 .testimonials__cards {
-    /* display: flex; */
-    /* align-items: center; */
-    /* gap: 27px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
     margin-bottom: 58px;
 }
 
@@ -582,6 +583,10 @@ p {
 
 .testimonials-card--focused {
     max-width: 645px;
+}
+
+.testimonials-card--not-focused {
+    display: none;
 }
 
 .testimonials-card__text-block {
@@ -604,6 +609,7 @@ p {
 .scroll-bar__dots {
     display: flex;
     gap: 10px;
+    margin-left: 5%;
 }
 
 .scroll-bar__dot--active {
@@ -615,6 +621,7 @@ p {
 .scroll-bar__arrows {
     display: flex;
     gap: 20px;
+    margin-right: 5%;
 }
 
 .scroll-bar__arrow-icon {
@@ -825,6 +832,31 @@ p {
     .testimonials {
         margin-bottom: 152px;
         border-radius: 50px;
+        align-items: flex-start;
+        padding: 111px 94px 56px;
+    }
+    .testimonials__cards {
+        flex-direction: row;
+        align-items: center;
+    }
+    .testimonials-card {
+        flex-direction: row;
+        align-items: flex-start;
+        min-width: 400px;
+        padding: 60px 60px 55px 40px;
+    }
+    .testimonials-card--focused {
+        min-width: 645px;
+    }
+    .testimonials-card--not-focused {
+        display: flex;
+    }
+    .testimonials-card__text-block {
+        margin-top: 20px;
+    }
+    .testimonials-card__text {
+        height: 130px;
+        overflow: hidden;
     }
     /* footer */
     .footer {
