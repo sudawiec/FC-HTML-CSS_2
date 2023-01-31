@@ -1,19 +1,19 @@
-
 // Create variables to store DOM nodes
 
-const activeBtn = document.querySelector(".active");
-const dropdownMenu = document.querySelector("#dropdown")
+const dropdownMenu = document.querySelector("#dropdown");
+const horizontalNavBtn = document.querySelector("#horizontal-nav__item");
 const navToggle = document.querySelector(".nav-toggle");
 
-// Function
+// Functions
 
 const toggleDropdown = () => {
   dropdownMenu.classList.toggle("show");
+  horizontalNavBtn.classList.toggle("active");
 };
 
 // Event listeners
 
-activeBtn.addEventListener("click", (e) => {
+horizontalNavBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   toggleDropdown();
 });
