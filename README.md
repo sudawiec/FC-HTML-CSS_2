@@ -51,12 +51,22 @@ Users should be able to:
 
 ### What I learned
 
+- Usage of the :where() pseudo-class function which takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list. It has 0 specificity compared to :is()
+
+```css
+:where(h1, h2, h3, h4, .ft-main__info-title, .ft-main__adress, .ft-main__contact, .ft-main__title, .ft-bottom__left-text) {
+    color: var(--text-color-dark);
+}
+```
+
+-
+
 ### Continued development
 
 The next step I'm going to focus on:
 
 - Refactoring style.css file
-- Create a hoverable dropdowns in horizontal navigation
+- Create a clickable dropdowns in horizontal navigation
 - Fix positioning in features section
 - Making slider in testimonials section
 
@@ -65,6 +75,7 @@ The next step I'm going to focus on:
 - [MDN Web Docs](https://developer.mozilla.org/en-US/) - Great and irreplaceable resource of knowledge
 - [W3Schools](https://www.w3schools.com/) - Great and irreplaceable resource of knowledge
 - [CSS-Tricks](https://css-tricks.com/) - They have handy solutions with nice graphic design
+- [JavaScript Info](https://javascript.info/) - Modern JavaScript fundamentals explenations
 
 ## Author
 
