@@ -94,15 +94,45 @@ select {
 }
 @font-face {
   font-family: "Avenir";
-  src: url(./fonts/AvenirLTStd-Black.otf);
-  src: url(./fonts/AvenirLTStd-Book.otf);
-  src: url(./fonts/AvenirLTStd-Roman.otf);
+  src: url(../../fonts/AvenirLTStd-Black.otf);
+  src: url(../../fonts/AvenirLTStd-Book.otf);
+  src: url(../../fonts/AvenirLTStd-Roman.otf);
 }
 @font-face {
   font-family: "Helvetica";
-  src: url(./fonts/Helvetica-Bold.ttf);
-  src: url(./fonts/Helvetica-BoldOblique.ttf);
-  src: url(./fonts/helvetica-light-587ebe5a59211.ttf);
-  src: url(./fonts/Helvetica-Oblique.ttf);
-  src: url(./fonts/Helvetica.ttf);
+  src: url(../../fonts/Helvetica-Bold.ttf);
+  src: url(../../fonts/Helvetica-BoldOblique.ttf);
+  src: url(../../fonts/helvetica-light-587ebe5a59211.ttf);
+  src: url(../../fonts/Helvetica-Oblique.ttf);
+  src: url(../../fonts/Helvetica.ttf);
+}
+html {
+  font-size: 1rem;
+}
+
+body {
+  background-color: linear-gradient(180deg, hsl(206deg, 64%, 98%) 0%, hsl(0deg, 0%, 100%) 19.4%);
+  color: hsl(203deg, 16%, 35%);
+  font: 400 1rem/1.6 "Avenir", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1248px;
+  margin: 3.125em auto 5.6875em;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+::-moz-selection {
+  background-color: hsl(203deg, 16%, 35%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+::selection {
+  background-color: hsl(203deg, 16%, 35%);
+  color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */
