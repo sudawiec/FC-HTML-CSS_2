@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    &__circle {
+        width: 20px;
+        aspect-ratio: 1 / 1;
+        background-color: $color-accent-purple;
+        border-radius: 50px;
+    }
+    &__pill {
+        width: 20px;
+        height: 35px;
+        background-color: $color-accent-pink;
+        border-radius: 50px;
+    }
+}
