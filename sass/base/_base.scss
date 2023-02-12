@@ -1,0 +1,23 @@
+html {
+    font-size: $default-font-size;
+}
+
+body {
+    background-color: $color-primary;
+    color: $color-text-light;
+    font: $primary-font;
+}
+
+.container {
+    width: 90%;
+    max-width: 1248px;
+    margin: 3.125em auto 5.6875em;
+    @include mq(medium) {
+        width: 100%;
+    }
+}
+
+::selection {
+    background-color: $color-text-light;
+    color: $color-white;
+}
