@@ -28,68 +28,34 @@
     <div class="container">
       <!-- HEADER -->
       <header class="header">
-        <!-- left side menu -->
-        <div class="menu-left">
-          <!-- logo -->
+        <nav class="menu">
           <div class="logo">
             <div class="logo__circle"></div>
             <div class="logo__pill"></div>
           </div>
-          <!-- horizontal navigation -->
-          <nav class="horizontal-nav">
-            <ul class="horizontal-nav__list">
-              <button class="horizontal-nav__item" id="horizontal-nav__item">
-                <a href="#about-us" class="horizontal-nav__link">About</a>
-              </button>
-              <div class="dropdown" id="dropdown">
-                <a href="#" class="dropdown__link">Profile</a>
-                <a href="#" class="dropdown__link">Features</a>
-                <a href="#" class="dropdown__link">Careers</a>
-                <a href="#" class="dropdown__link">DW News</a>
-              </div>
-              <li class="horizontal-nav__item">
-                <a href="#" class="horizontal-nav__link">Help</a>
-              </li>
-              <li class="horizontal-nav__item">
-                <a href="#" class="horizontal-nav__link">Features</a>
-              </li>
-              <li class="horizontal-nav__item">
-                <a href="#" class="horizontal-nav__link">Signup</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- right side menu -->
-        <div class="menu-right">
-          <a href="#" class="btn btn--primary" role="button"
-            >Request demo<img src="./images/btn-arrow.svg" alt="arrow icon"
-          /></a>
-        </div>
-        <!-- hamburger button -->
-        <button class="nav-toggle" type="button" aria-label="toggle navigation">
-          <span class="nav-toggle__hamburger" role="button"></span>
-        </button>
-        <!-- vertical navigation -->
-        <nav class="vertical-nav">
-          <ul class="vertical-nav__list">
-            <li class="vertical-nav__item">
-              <a href="#about-us" class="vertical-nav__link">About</a>
+          <ul class="menu__item-list" role="list">
+            <li class="menu__item menu_item--active">
+              <a href="#" class="menu__link">About</a>
             </li>
-            <li class="vertical-nav__item">
-              <a href="#" class="vertical-nav__link">Help</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Help</a>
             </li>
-            <li class="vertical-nav__item">
-              <a href="#" class="vertical-nav__link">Features</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Features</a>
             </li>
-            <li class="vertical-nav__item">
-              <a href="#" class="vertical-nav__link">Signup</a>
-            </li>
-            <li class="vertical-nav__item">
-              <a href="#" class="btn btn-arrow vertical-nav__link" role="button"
-                >Request Demo<img src="./images/btn-arrow.svg" alt="arrow icon"
-              /></a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Sign up</a>
             </li>
           </ul>
+          <a href="#" class="btn menu__btn btn--primary"
+            >Request demo<img
+              src="./images/btn-arrow.svg"
+              class="btn__icon"
+              alt="Arrow icon"
+          /></a>
+          <button class="menu__toggle-btn" role="button" aria-label="Toggle navigation">
+            <span class="menu__toggle-hamburger" role="button"></span>
+          </button>
         </nav>
       </header>
       <!-- MAIN -->
@@ -104,7 +70,7 @@
               security, so you can store your data here safely but not be afraid
               of being stolen by others.
             </p>
-            <a href="#" class="btn btn-intro" role="button">Learn more</a>
+            <a href="#" class="btn btn--secondary" role="button">Learn more</a>
           </div>
         </section>
         <!-- about us section -->
@@ -146,7 +112,7 @@
                   provides a search engine, which is useful for making it easier
                   to find data effectively saving time.
                 </p>
-                <a href="#" class="btn btn-arrow btn-transparent" role="button"
+                <a href="#" class="btn btn--transparent" role="button"
                   >Learn more<img src="./images/btn-arrow.svg" alt="arrow icon"
                 /></a>
               </div>
@@ -169,7 +135,7 @@
                   again in the morning, giving you comfort when you need data
                   when urgent.
                 </p>
-                <a href="#" class="btn btn-arrow btn-transparent" role="button"
+                <a href="#" class="btn btn--transparent" role="button"
                   >Learn more<img src="./images/btn-arrow.svg" alt="arrow icon"
                 /></a>
               </div>
@@ -188,7 +154,7 @@
                   Print out service gives you convenience if someday you need
                   print data, just edit it all and just print it.
                 </p>
-                <a href="#" class="btn btn-arrow btn-transparent" role="button"
+                <a href="#" class="btn btn--transparent" role="button"
                   >Learn more<img src="./images/btn-arrow.svg" alt="arrow icon"
                 /></a>
               </div>
@@ -208,7 +174,7 @@
                   files to be safer. The file can be secured with a code or
                   password that you created, so only you can open the file.
                 </p>
-                <a href="#" class="btn btn-arrow btn-transparent" role="button"
+                <a href="#" class="btn btn--transparent" role="button"
                   >Learn more<img src="./images/btn-arrow.svg" alt="arrow icon"
                 /></a>
               </div>
@@ -305,8 +271,8 @@
             </p>
           </div>
           <div class="ft-top__buttons">
-            <a href="#" class="btn btn-footer" role="button">Learn more</a>
-            <a href="#" class="btn btn-arrow" role="button"
+            <a href="#" class="btn btn--footer" role="button">Learn more</a>
+            <a href="#" class="btn btn--primary" role="button"
               >Request Demo<img src="./images/btn-arrow.svg" alt="arrow icon"
             /></a>
           </div>
