@@ -3,12 +3,49 @@
     color: $color-text-dark;
     font-weight: 800;
     &--primary {
+        @extend %primary-shared;
         background-color: $color-white;
         box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
         padding: 1.0625em 1.8125em;
+    }
+    &--transparent {
+        @extend %primary-shared;
+    }
+    &--secondary {
+        @extend %secondary-shared;
+        background-color: $color-accent-purple;
+        &:hover {
+            background-color: lighten($color-accent-purple, 25%);
+        }
+    }
+    &--footer {
+        @extend %secondary-shared;
+        background-color: $color-accent-pink;
+        font-weight: 900;
+        &:hover {
+            background-color: lighten($color-accent-pink, 25%);
+        }
+    }
+}
+
+%primary-shared {
+    @include flexContainer(flex-start, center);
+    gap: 20px;
+}
+
+%secondary-shared {
+    color: $color-white;
+    display: inline-block;
+    font-size: 1.125rem;
+    padding: 0.89em 2.05em 0.83em;
+    &:hover {
+        color: $color-text-dark;
+    }
+}
+
+.menu__btn {
+    display: none;
+    @include mq(medium) {
+        display: flex;
     }
 }
