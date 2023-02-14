@@ -1,0 +1,23 @@
+h1,
+h2,
+h3 {
+    font: $secondary-font;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h4,
+p {
+    font: 900 1.125rem/1.6 $font-family-body;
+}
+
+p {
+    font-weight: 400;
+}
+
+:where(h1, h2, h3, h4) {
+    color: $color-text-dark;
+}
