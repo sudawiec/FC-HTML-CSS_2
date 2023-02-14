@@ -1,7 +1,11 @@
 .menu {
     max-width: 1120px;
     @include flexContainer(space-between, center);
+    margin-bottom: 3.125em;
     position: relative;
+    @include mq(medium) {
+        margin-bottom: 8.125em;
+    }
     &__item-list {
         display: none;
         @include mq(medium) {
