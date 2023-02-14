@@ -1,0 +1,15 @@
+.hero {
+    margin-bottom: 3.125em;
+    padding-bottom: 6.25em;
+    position: relative;
+    &::before {
+        content: '';
+        width: 70.9%;
+        height: 85%;
+        background: url(../../images/hero-img.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
