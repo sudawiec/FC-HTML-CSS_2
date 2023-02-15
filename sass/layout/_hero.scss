@@ -2,12 +2,16 @@
     margin-bottom: 3.125em;
     padding-bottom: 6.25em;
     position: relative;
+    @include mq(medium) {
+        margin-bottom: 6.1875em;
+    }
     &::before {
         content: '';
         width: 70.9%;
         height: 85%;
         background: url(../../images/hero-img.svg) no-repeat;
         background-size: cover;
+        opacity: 0.8;
         position: absolute;
         right: 0;
         bottom: 0;

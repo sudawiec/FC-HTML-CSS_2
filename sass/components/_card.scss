@@ -1,0 +1,52 @@
+.card {
+    border-radius: 20px;
+    @include flexContainer(center, center);
+    flex-direction: column;
+    padding: 2em 1em;
+    text-align: center;
+    @include mq(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    &--primary {
+        background-color: $color-accent-pinklight;
+        gap: 5.55%;
+        @include mq(medium) {
+            border-radius: 50px;
+            padding: 2em 5.8125em 1.5em 0.6875em;
+        }
+    }
+    &--primary &__img {
+        @include mq(medium) {
+            width: 42.7%;
+        }
+    }
+    &--primary &__content {
+        max-width: 475px;
+    }
+    &--primary &__title {
+        margin-bottom: 1em;
+    }
+    &--secondary {
+        max-width: 645px;
+        background-color: $color-white;
+        border: 1px solid $color-accent-purple;
+        box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+        gap: 4.65%;
+        @include mq(medium) {
+            align-items: flex-start;
+            padding: 3.75em 3.75em 3.4375em 2.5em;
+        }
+    }
+    &--secondary &__content {
+        max-width: 385px;
+        margin-top: 1.25em;
+    }
+    &__link {
+        color: $color-accent-purple;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 1.36em;
+    }
+}
