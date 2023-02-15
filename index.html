@@ -53,7 +53,11 @@
               class="btn__icon"
               alt="Arrow icon"
           /></a>
-          <button class="menu__toggle-btn" role="button" aria-label="Toggle navigation">
+          <button
+            class="menu__toggle-btn"
+            role="button"
+            aria-label="Toggle navigation"
+          >
             <span class="menu__toggle-hamburger" role="button"></span>
           </button>
         </nav>
@@ -73,20 +77,22 @@
       <main class="main">
         <!-- about us section -->
         <section class="about-us">
-          <div class="about-us__desc">
-            <h2 class="about-us__title">
-              We are a high-level data storage bank
-            </h2>
-            <p class="about-us__text">
-              The place to store various data that you can access at any time
-              through the internet and where you can carry it. This very
-              flexible storage area has a high level of security. To enter into
-              your own data you must enter the password that you created when
-              you registered in this Data Warehouse.
-            </p>
-          </div>
-          <div class="about-us__img">
-            <img src="./images/desc-img.svg" alt="about-us section image" />
+          <div class="card card--primary">
+            <img
+              src="./images/desc-img.svg"
+              alt="about-us section image"
+              class="card__img"
+            />
+            <div class="card__content">
+              <h2 class="card__title">We are a high-level data storage bank</h2>
+              <p class="card__text">
+                The place to store various data that you can access at any time
+                through the internet and where you can carry it. This very
+                flexible storage area has a high level of security. To enter
+                into your own data you must enter the password that you created
+                when you registered in this Data Warehouse.
+              </p>
+            </div>
           </div>
         </section>
         <!-- features section -->
