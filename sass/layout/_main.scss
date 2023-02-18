@@ -5,3 +5,31 @@
         margin-bottom: 9.375em;
     }
 }
+.features {
+    max-width: 1137.28px;
+    margin-bottom: 3.125em;
+    padding: 2.5em 0.875em;
+    text-align: center;
+    @include mq(medium) {
+        margin-bottom: 9.25em;
+        margin-left: -1.25em;
+    }
+    &__title {
+        margin-bottom: 0.625em;
+    }
+    &__subtitle {
+        max-width: 584px;
+        margin: 0 auto 2.78em;
+    }
+    &__content {
+        @include flexContainer(center, center);
+        flex-direction: column;
+        gap: 50px 0;
+        @include mq(medium) {
+            align-items: flex-start;
+        }
+        @include mq(xlarge) {
+            flex-flow: row wrap;
+        }
+    }
+}
